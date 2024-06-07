@@ -1,0 +1,16 @@
+Tabela Wplaty:
+
+Przechowuje wpłaty za rezerwacje.
+
+* id : int - PK (uniq, non-NULL)
+  Klucz główny.
+
+* data : date - non-NULL
+  Data wpłaty.
+
+* wartosc : money - non-NULL, > 0
+  Wysokość wpłaty.
+
+* id_rezerwacji : int - FK1, non-NULL
+  Klucz główny rezerwacji, na rzecz której dokonywana jest wpłata.
+
